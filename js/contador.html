@@ -1,0 +1,19 @@
+<?php
+if (isset ($_COOKIE["ContadorInformático"])){
+	setcookie("ContadorInformático", $_COOKIE["ContadorInformático"]+1, time()+365*24*60*60);
+	echo "´Número de Visitas:" .$_COOKIE["ContadorInformático"];	
+} else{
+    setcookie("ContadorInformático", 1, time ()+365*24*60*60);
+	echo "Bienvenido a la Página Inicial del curso Seguridad Informática";
+}
+
+?>
+<html>
+     <head>
+         <title>Contador Página index</title>
+             <meta charset= "UTF-8" />
+     </head>
+         <body>
+         </body>
+
+</html>
